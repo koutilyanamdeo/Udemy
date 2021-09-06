@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div.border{
+        border-width:5px ;
+        border-style: dashed;
+        border-color:red ;
+        /* border: 1px solid black; ------>This COde will rewrite and show this one */
+        /* text-align: center; */
+        /* border-radius: 50%; */
+        border-radius: 10px;
+        width: 200px;
+        height: 200px;
+        }
+        div.Secborder{
+            border-width:10px ;
+            border-style: solid;
+            border-color:red ;
+            
+            border-top-left-radius: 5px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 50%;
+            /* <----We can also do this by----> */
+            border-radius:5px 50% 5px 50% ;
+            
+            width: 200px;
+            height: 200px;
+            
+            }
+    </style>
+</head>
+<body>
+    <div class="border"> hey This ius vnnadsfojnvdis</div>
+    <div class="Secborder"> This Is second border</div>
+    
+</body>
+</html>

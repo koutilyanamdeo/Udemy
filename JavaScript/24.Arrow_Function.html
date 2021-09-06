@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const hello = function () {
+        return "hello Koutilya";
+      };
+      const greeting = hello();
+      console.log(greeting);
+
+      /////------------------>>>> In Replace of this <<<<------------------/////
+
+      function myName(name) {
+        //   ...
+      }
+
+      const anonymusFunction = function (name) {
+        //   ... --> here this is using locally
+        this
+      };
+      /////------------------>>>> In Replace of this we write this <<<<------------------/////
+
+      const arrowFunc1 = (name) => {
+        //   ...
+        // .... - -->here this is using globally 
+        this 
+      };
+
+      const arrowFunc2 = (name) =>...
+
+      const myNewGreeting = (name) => console.log(`Welcome, ${name}`);
+      myNewGreeting("koutilya ");
+    </script>
+  </body>
+</html>

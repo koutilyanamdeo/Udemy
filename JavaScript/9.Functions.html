@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    function addNumbers(num1,num2){
+    const total = Number(num1)+ Number(num2);
+    return total;
+        }
+
+const addition = addNumbers("6","4");
+
+// << ... -> This dot operator is used for arrays and for many values in a function >
+function addNumbers2(greetingName,...numbers){
+    let total =0;
+    for(index in numbers) {
+        total = total +numbers[index];
+    };
+return `${greetingName} : the total is ${total}`;
+}
+
+let newtotal = addNumbers2("koutilya" , 1 , 5 , 6 , 8);
+    console.log(newtotal);
+    
+    </script>
+
+</body>
+</html>

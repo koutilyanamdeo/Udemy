@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      ///////////---------------IN OBJECT THIS KEYWORD-----------
+      const person = {
+        name: "koutilya",
+        class: "eight",
+        speak() {
+          console.log(`My Name is ${this.name}`);
+          console.log(`My Name is ${name}`);
+          console.log(`My Name is ${this}`);
+        },
+      };
+      person.speak();
+      ///////////---------------IN FUNTION THIS KEYWORD-----------
+
+      function counter() {
+        let total = 0;
+        if (this.total == undefined) {
+          this.total = 1;
+        } else {
+          this.total++;
+        }
+        console.log("Running counter. total is", this.total);
+      }
+      counter();
+      counter();
+      counter();
+
+    </script>
+  </body>
+</html>

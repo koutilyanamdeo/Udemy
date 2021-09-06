@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="this-class"> THis is class 1</div>
+    <div class="this-class"> THis is class 1</div>
+    <div class="this-class"> THis is class 1</div>
+    <div class="this-class"> THis is class 1</div>
+
+<!-- Changing every item in a list -->
+<ol>
+    <li>This is one </li>
+    <li>This is two </li>
+    <li>This is Three </li>
+</ol>
+
+
+<script>
+    document.querySelector(".this-class").innerText;
+    document.querySelectorAll(".this-class");
+    // <!-- Changing every item in a list -->
+
+    const elements = document.querySelectorAll("li");
+    elements.forEach(node=>{
+        node.innerText="THis is Changed";
+                });
+    elements.forEach((node,index)=>{
+        node.innerText=`HEllo this is item ${index}` 
+    });
+
+    // Dynamically change or insert class 
+
+    elements.forEach(node=>{
+        node.classList.add("custom-class","second-class");
+                });
+
+</script>
+
+</body>
+</html>

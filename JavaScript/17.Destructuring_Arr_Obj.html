@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        //<<<<<<<<---------------------------DESTRUCTING ARRAY----------------------------->>>>>>>>>>>>>>>
+
+        const months = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "December",
+        ];
+        const [jan, feb, , , , dec] = months;
+        // jan and feb ar different Variables
+        console.log(`my favourite month is ${jan} &least fav month is ${dec} `);
+        console.log(jan, feb);
+        console.log(months);
+
+        //<<<<<<<<---------------------------DESTRUCTING OBJECT----------------------------->>>>>>>>>>>>>>>
+      const person={"name":"kouytilya","age":"31","favfood":"pizza"}
+      if (thing) {
+          const { name ,age}=person;
+
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+            margin: 50px auto;
+            position: relative;
+            background-color: black;
+        }
+        .box::before{
+            content: ' ';
+            display: block;
+            border: 10px solid red;
+            width: 100%;
+            height: 100%;
+            position: absolute  ;
+            top: -30px;
+            left: -30px;
+            z-index: -1;
+        }
+        .box::after{
+            content: ' ';
+            display: block;
+            border: 10px solid blue;
+            width: 100%;
+            height: 100%;
+            position: absolute  ;
+             top: 10px;
+            left: 10px; 
+            z-index: -1;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            position: relative;
+        }
+        a::before{
+            content: ' ';
+            width: 100%;
+            height: 4px;
+            background-color: blue;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        a:hover::before{
+            height: 14px;
+            background-color: yellow;
+
+        }
+    </style>
+
+    <div class="box"></div>
+    <hr>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusamus! Fugit <a href="#"> inventore autem ratione rem sed facilis,</a> 
+    placeat provident reprehenderit temporibus repellat veritatis nam voluptatibus, sapiente doloribus, eveniet excepturi beatae?
+    
+</body>
+</html>

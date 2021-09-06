@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      while (true) {
+        let num = prompt("Guess the Number between");
+        num = Number(num);
+        let ranNum = Math.floor(Math.random() * 10);
+        if (num === ranNum) {
+          alert("Correct guessing");
+          break;
+        } else {
+          console.log(
+            `you guessd: ${num} but the correct Number was ${ranNum}`
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
